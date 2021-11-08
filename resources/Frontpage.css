@@ -1,0 +1,686 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url("images-contents/hero.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.row {
+    max-width: 1140;
+    margin: 0 auto;
+}
+
+.hero-text-box {
+    width: 1140px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    color: white;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    word-spacing: 4;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+}
+
+li {
+    list-style: none;
+    margin: 15px;
+}
+
+.nav-link:hover {
+    padding-bottom: 8px;
+    border-bottom: 2px solid orange;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    margin: 8px;
+}
+
+.btn:hover , .btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn-ghost {
+    border: 1px solid;
+    color: #e67e22;
+    transition: color 0.2s;
+}
+
+.btn-full:hover, .btn-full:active {
+    border: 1px solid #cf6d17
+}
+
+.btn-ghost:hover, .btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: #e67e22;
+    content: " ";
+    margin: auto;
+    margin-top: 30px;
+}
+
+.section-one {
+    height: 100vh;
+    margin-bottom: 5%;
+}
+.top {
+    height: 35%;
+    width: auto;
+    margin-top: 7%;
+}
+
+.wish {
+    margin-top: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wish-two {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.second-row {
+    display: flex;
+    margin-top: 15px;
+}
+
+.second-row-one {
+    margin: 10px;
+}
+
+.icon-big {
+    font-size: 300%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 10px;
+    --icon-stroke-width: 20px;
+}
+
+.image-row {
+    display:flex;
+}
+
+.image-box {
+    width: 25%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.image-stuff {
+    height: auto;
+    width: 100%;
+    margin: none;
+    padding: none;
+    opacity: 0.7;
+    overflow: hidden;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.image-stuff:hover {
+    opacity: 1;
+    transform: scale(1.00);
+}
+
+.section-three {
+    max-width: 1140;
+    height: 130vh;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-bottom: 7%;
+    overflow: hidden;
+}
+
+.sec-three-header {
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    padding-top: 5%;
+}
+
+.iphone {
+    width: 40%;
+    position: relative;
+    top: 60px;
+    left: 30%;
+    overflow: hidden;
+}
+
+.iphone-img {
+    width: 42%;
+    height: auto;
+}
+
+.sec-three-paras {
+    position: relative;
+    top: -380px;
+    left: 54%;
+}
+
+.sec-three-para {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.sec-three-paranum {
+    text-align: center;
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    font-size: xx-large;
+}
+
+.sec-three-paraone {
+    width: 35%;
+    margin-left: 20px;
+}
+
+.sec-three-btns {
+    position: relative;
+    top: -370px;
+    left: 55%;
+}
+
+.btn-app:link, .btn-app:visited {
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.section-four {
+    max-width: 1140;
+    height: 100vh;
+    margin-bottom: 10%;
+}
+
+.sec-four-header {
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+}
+
+.location-heading {
+    margin-top: 10px;
+}
+
+.locations {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1140;
+    margin-top: 50px;
+}
+
+.location-img {
+    height: auto;
+    width: 250px;
+}
+
+.mini-div {
+    display: flex;
+}
+
+.sec-four-logo {
+    color: #e67e22;
+    margin-top: 20px;
+    height: auto;
+    width: 50px;
+}
+
+.sec-four-para {
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+.twitter {
+    margin-top: 18px;
+    margin-left: 10px;
+    color: #e67e22;
+    text-decoration: underline;
+}
+
+.twitter:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.twitter-logo {
+    color: #e67e22;
+    margin-top: 20px;
+    height: auto;
+    width: 50px;
+}
+
+.twitter-logo:hover {
+    color: #00acee;
+}
+
+.section-five {
+    max-width: 1140;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    url("images-contents/back-customers.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec-five-header {
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    padding-top: 70px;
+    color: white;
+}
+
+.quotes {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    color: white;
+}
+
+.blockquote:before {
+    content:"\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: white;
+}
+
+.profile {
+    display: flex;
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    color: white;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+.sec-five-name {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    color: white;
+}
+
+.section-six {
+    max-width: 1140;
+    height: 140vh;
+    background-color: #f4f4f4;
+    margin-bottom: 7%;
+    overflow: hidden;
+}
+
+.sec-six-header {
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+    padding-top: 80px;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.plan {
+    margin-top: 50px;
+    background-color: white;
+    height: 500px;
+    width: 28%;
+}
+
+.price {
+    border-bottom: 1px solid #e8e8e8;
+    height: 40%;
+    background-color: #FcFcFc;
+}
+
+.description {
+    height: 40%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.sign-up {
+    height: 20%;
+    box-shadow: 0 2px 2px #cac5c5;
+    background-color: #FcFcFc;
+}
+
+.price-header {
+    position: relative;
+    top: 20px;
+    left: 25px;
+}
+
+.per-month {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.per {
+    color: #e67e22;
+    font-size: 300%;
+    font-weight: 100;
+}
+
+.month {
+    color: #e67e22;
+    position: relative;
+    left: -10px;
+    top: 40px;
+}
+
+.saving {
+    font-weight: 300;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.desc {
+    margin-left: 25px;
+    font-size: 80%;
+}
+
+.check {
+    color: #e67e22;
+}
+
+.btn-signup {
+    position: relative;;
+    top: 20px;
+    left: 82px;;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    margin: 8px;
+}
+
+.btn-signup:hover , .btn-signup:active {
+    background-color: #cf6d17;
+}
+
+.btn-signup-full {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.btn-signup-empty {
+    border: 1px solid;
+    color: #e67e22;
+    transition: color 0.2s;
+}
+
+.btn-signup-full:hover, .btn-signup-full:active {
+    border: 1px solid #cf6d17
+}
+
+.btn-signup-empty:hover, .btn-signup-empty:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+.section-seven {
+    max-width: 1140;
+    height: 110vh;
+    overflow: hidden;
+}
+
+.sec-seven-header {
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 6px;
+    letter-spacing: 2px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-left: 50px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:0;
+    left: 40%;
+    width: 400px;
+}
+
+.box {
+    position: relative;
+    top: 0;
+    left: 44%;
+}
+
+.crows {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 26px;
+    left: 21%;
+}
+
+.submit {
+    position: relative;;
+    top: 8px;
+    left: 43.5%;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    margin: 8px;
+}
+
+.submit:hover , .submit:active {
+    background-color: #cf6d17;
+}
+
+.submit {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+}
+
+.submit:hover, .submit:active {
+    border: 1px solid #cf6d17
+}
+
+.footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+    height: 35vh;
+    overflow: hidden;
+}
+
+.anchors {
+    color: #888;
+    margin: 0.8%;
+}
+
+.anchors-menu:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+.anchors-two {
+    position: relative;
+    top: -20px;
+    left: 70%;
+}
+
+.face {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.twit {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.you {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.insta {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.face:hover {
+    color: #4267B2;
+    transition: 0.2;
+}
+
+.twit:hover {
+    color: #00acee;
+    transition: 0.2;
+}
+
+.you:hover {
+    color: #c4302b;
+    transition: 0.2;
+}
+
+.insta:hover {
+    color: #8a3ab9;
+    transition: 0.2;
+}
+
+.copy {
+    position: relative;
+    top: 30px;
+    left: 32%;
+    font-size: 110%;
+    word-spacing: 4px;
+    color: #888;
+}
